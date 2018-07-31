@@ -1,13 +1,16 @@
 {
   "env": {
     "es6": true,
-    "node": true
+    "node": true,
+    "browser": true,
+    "commonjs": true
   },
   "extends": "eslint:recommended",
   "root": true,
   "parser": "babel-eslint",
   "plugins": ["flowtype"],
   "rules": {
+    "no-console": ["error", { "allow": ["log"] }],
     "no-useless-escape": 0,
      "flowtype/boolean-style": [
       2,
